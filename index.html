@@ -3,46 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arena Multimedia</title>
-    <link rel="icon" href="images/logo_8.png" type="image/png">
+    <meta name="description" content="Arena Multimedia - Thương hiệu đào tạo Mỹ thuật Đa phương tiện hàng đầu Châu Á với 28 năm kinh nghiệm, 250+ trung tâm và 450,000+ sinh viên">
+    <meta name="keywords" content="Arena Multimedia, thiết kế đồ họa, graphic design, UI/UX design, đào tạo multimedia">
+    <title>Arena Multimedia - Đào tạo Mỹ thuật Đa phương tiện</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png" type="image/png">
+    
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-      <link rel="stylesheet" href="STYLE.css">
-          <link rel="stylesheet" href="css/simple-grid.css">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
-    <!-- Header -->
-    <header>
-        <nav>
-            <div class="nav-container">
-                <!-- Logo Column -->
-                <div class="logo-column">
-                    <a href="index.html" class="logo">
-                        <img src="images/logo_8.png" alt="Arena Multimedia" class="logo-image">
-                    </a>
-                </div>
-
-                <!-- Navigation Links Column -->
-                <ul class="nav-links">
-                    <li class="dropdown">
-                        <a href="index.html">GIỚI THIỆU</a>
-                        <div class="dropdown-menu">
-                            <a href="index2.html">Tại sao chọn Arena Multimedia?</a>
-                            <a href="co-so-vat-chat.html">Cơ Sở Vật Chất</a>
-                            <a href="hoi-dap.html">Hỏi & Đáp</a>
+<body>
+    
+    <!-- ========== NAVIGATION BAR ========== -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html" aria-label="Arena Multimedia Homepage">
+                <img src="images/logo.png" alt="Arena Multimedia Logo" height="40">
+            </a>
+            
+            <!-- Hamburger menu for mobile (toggle button) -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    
+                    <!-- GIỚI THIỆU - with dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="gioiThieuDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            GIỚI THIỆU
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="gioiThieuDropdown">
+                            <a class="dropdown-item active" href="index.html">Trang Chủ</a>
+                            <a class="dropdown-item" href="tai-sao-chon-arena.html">Tại sao chọn Arena Multimedia?</a>
+                            <a class="dropdown-item" href="co-so-vat-chat.html">Cơ Sở Vật Chất</a>
+                            <a class="dropdown-item" href="hoi-dap.html">Hỏi & Đáp</a>
                         </div>
                     </li>
-                    <li><a href="index.html#courses">TUYỂN SINH</a></li>
-                    <li><a href="index.html#about">LIÊN THÔNG - VIỆC LÀM</a></li>
-                    <li><a href="index.html#contact">LIÊN HỆ</a></li>
-                    <li><a href="index.html#register" class="btn">ĐĂNG KÝ</a></li>
+                    
+                    <!-- TUYỂN SINH - with dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="tuyenSinhDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            TUYỂN SINH
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="tuyenSinhDropdown">
+                            <a class="dropdown-item" href="truong-trinh-dao-tao.html">Chương Trình Đào Tạo</a>
+                            <a class="dropdown-item" href="thong-tin-tuyen-sinh.html">Thông Tin Tuyển Sinh</a>
+                            <a class="dropdown-item" href="hoc-phi.html">Học Phí</a>
+                        </div>
+                    </li>
+                    
+                    <!-- LIÊN THÔNG - VIỆC LÀM - with dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="lienThongDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            LIÊN THÔNG - VIỆC LÀM
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="lienThongDropdown">
+                            <a class="dropdown-item" href="doi-tac-lien-thong.html">Đối Tác Liên Thông</a>
+                            <a class="dropdown-item" href="nghe-nghiep.html">Nghề Nghiệp</a>
+                        </div>
+                    </li>
+                    
+                    <!-- LIÊN HỆ -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="lien-he.html">LIÊN HỆ</a>
+                    </li>
+                    
+                    <!-- ĐĂNG KÝ button -->
+                    <li class="nav-item">
+                        <a class="nav-link btn-dang-ky" href="dang-ky.html">ĐĂNG KÝ</a>
+                    </li>
                 </ul>
             </div>
-        </nav>
-    </header>
-</head>
+        </div>
+    </nav>
 
-    <!-- Hero Section -->
-      <!-- Hero Carousel Section -->
-    <div id="heroCarousel" class="carousel slide hero-carousel" data-ride="carousel" data-interval="5000">
+    <!-- ========== HERO CAROUSEL SECTION ========== -->
+    <div id="heroCarousel" class="carousel slide hero-carousel" data-ride="carousel" data-interval="7000">
         
         <!-- Carousel Items -->
         <div class="carousel-inner">
@@ -52,7 +103,7 @@
                 <div class="carousel-caption">
                     <h1>Bạn có phải hợp với nghề?</h1>
                     <div class="highlight">MULTIMEDIA</div>
-                    <div class="highlight yellow">DESIGN?</div>
+                    <div class="highlight yellow">DESIGN</div>
                     <a href="#courses" class="btn-hero">Tìm hiểu ngay</a>
                 </div>
             </div>
@@ -67,12 +118,12 @@
                 </div>
             </div>
             
-            <!-- Slide 3: Digital Marketing -->
+            <!-- Slide 3: UI/UX Design -->
             <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600');">
                 <div class="carousel-caption">
                     <h1>Chinh phục thế giới số?</h1>
-                    <div class="highlight">DIGITAL</div>
-                    <div class="highlight cyan">MARKETING</div>
+                    <div class="highlight">UI/UX</div>
+                    <div class="highlight cyan">DESIGN</div>
                     <a href="#courses" class="btn-hero">Đăng ký ngay</a>
                 </div>
             </div>
@@ -91,200 +142,461 @@
         
     </div>
 
-    <!-- jQuery and Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <script>
-        // Khởi động carousel
-        $(document).ready(function(){
-            $('#heroCarousel').carousel({
-                interval: 5000,  // 5 giây tự động chuyển slide
-                pause: 'hover',  // Dừng khi hover
-                wrap: true       // Quay vòng lại từ đầu
-            });
-        });
-    </script>
-<body>
-    <!-- Stats Section -->
-    <section class="stats">
-        <h2>ARENA MULTIMEDIA</h2>
-        <p style="text-align: center; margin-bottom: 40px;">Thương hiệu số 1 tại Châu Á về đào tạo Chuyên gia Mỹ thuật số phương tiện.</p>
-        
-        <div class="stats-grid">
-            <div class="stat-card">
-                <div class="stat-icon">👥</div>
-                <div class="stat-number">28 năm</div>
-                <p>kinh nghiệm</p>
+    <!-- ========== ARENA MULTIMEDIA INFO SECTION ========== -->
+    <section class="arena-info-section" id="about">
+        <div class="container">
+            
+            <!-- Decorative top line -->
+            <div class="decorative-line"></div>
+            
+            <!-- Section Title -->
+            <h2 class="section-title">ARENA MULTIMEDIA</h2>
+            
+            <!-- Decorative bottom line -->
+            <div class="decorative-line"></div>
+            
+            <!-- Section Subtitle -->
+            <p class="section-subtitle">Thương hiệu số 1 tại Châu Á về đào tạo Chuyên gia Mỹ thuật Đa phương tiện.</p>
+            
+            <!-- Stats Row -->
+            <div class="row stats-row">
+                
+                <!-- Stat 1: 28 năm kinh nghiệm -->
+                <div class="col-md-3 col-6">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+                        <h3 class="stat-number">28 năm kinh nghiệm</h3>
+                    </div>
+                </div>
+                
+                <!-- Stat 2: 250 trung tâm -->
+                <div class="col-md-3 col-6">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <h3 class="stat-number">250 trung tâm</h3>
+                    </div>
+                </div>
+                
+                <!-- Stat 3: 450,000+ sinh viên -->
+                <div class="col-md-3 col-6">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-user-graduate"></i>
+                        </div>
+                        <h3 class="stat-number">450,000+ sinh viên</h3>
+                    </div>
+                </div>
+                
+                <!-- Stat 4: 20 quốc gia -->
+                <div class="col-md-3 col-6">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-earth-americas"></i>
+                        </div>
+                        <h3 class="stat-number">20 quốc gia</h3>
+                    </div>
+                </div>
+                
             </div>
-            <div class="stat-card">
-                <div class="stat-icon">🏢</div>
-                <div class="stat-number">250+</div>
-                <p>trung tâm</p>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">🎓</div>
-                <div class="stat-number">450,000</div>
-                <p>tình viên</p>
-            </div>
-            <div class="stat-card">
-                <div class="stat-icon">🌍</div>
-                <div class="stat-number">30+</div>
-                <p>quốc gia</p>
-            </div>
+            
         </div>
+    </section>
 
-        <!-- Video Section -->
-        <div class="content-grid">
-                <div class="video-container">
-                <!-- Use YouTube embed URL with start time (start=848) so the iframe will load correctly -->
-                <iframe src="https://www.youtube.com/embed/u1rDeQKSqRM?start=848" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-            <div class="content-text">
-                <h3 style="color: #ffd700;">Arena Multimedia toàn cầu</h3>
-                <p>Arena Multimedia là thương hiệu đào tạo Thiên thế về Mỹ thuật số phương liên với 1 tập đoàn đa quốc gia. Chúng tôi cam kết mang lại chất lượng đào tạo cao nhất với đội ngũ giảng viên giàu kinh nghiệm.</p>
-                <a href="#" class="btn">Xem thêm</a>
+    <!-- ========== VIDEO SECTION ========== -->
+    <section class="video-section">
+        <div class="container">
+            <div class="row align-items-center">
+                
+                <!-- Left side - Video -->
+                <div class="col-md-6">
+                    <div class="video-wrapper">
+                        <iframe 
+                            width="100%" 
+                            height="400" 
+                            src="https://www.youtube.com/embed/u1rDeQKSqRM?start=848" 
+                            title="Arena Multimedia Introduction Video" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+                
+                <!-- Right side - Content -->
+                <div class="col-md-6">
+                    <div class="video-content">
+                        <h2 class="video-title">ARENA MULTIMEDIA</h2>
+                        <p class="video-description">
+                            Arena Multimedia là thương hiệu đào tạo hàng đầu tại Châu Á về phương tiện đa 
+                            phương tiện và thiết kế đồ họa. Với 28 năm kinh nghiệm, chúng tôi đã đào tạo 
+                            hơn 450,000 học viên trên 30 quốc gia. Chương trình học được thiết kế phù hợp 
+                            với nhu cầu thị trường, giúp học viên có kỹ năng thực tế và cơ hội việc làm cao.
+                        </p>
+                        <p class="video-description">
+                            Đội ngũ giảng viên chuyên nghiệp, cơ sở vật chất hiện đại cùng hệ thống 250+ 
+                            trung tâm trên toàn cầu là cam kết của chúng tôi trong việc mang đến chất lượng 
+                            đào tạo tốt nhất cho học viên.
+                        </p>
+                        <a href="tai-sao-chon-arena.html" class="btn btn-read-more">Xem thêm</a>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </section>
 
-    <!-- UI/UX Design Section -->
-    <section class="content-section">
-        <div class="content-grid">
-            <div class="content-text">
-                <h3>Đào Tạo - Tuyển Sinh</h3>
-                <p>Với các khóa học từng bước, chuyên sâu về UI/UX Design & Interactive Media (PIDM) về Thiết kế VR & Motion Graphics, Thiết kế web Photoshop (IDM) Chỉnh sửa & hậu kỳ (VAMP) và các khóa học chính để bảo bảo học cho người dưỡng sau, học viên sẽ được cấp chứng chỉ uy tín của nhà nước và chứng chỉ quốc tế sau khi hoàn thành chương trình.</p>
-                <a href="#" class="btn">Xem thêm</a>
-            </div>
-            <div>
-                <img src="images/Dao_tao_tuyen_sinh.webp" alt="UI/UX Design" class="content-image">
+    <!-- ========== EDUCATION PROGRAM SECTION ========== -->
+    <section class="education-section" id="courses">
+        <div class="container">
+            <div class="row align-items-center">
+                
+                <!-- Left side - Content -->
+                <div class="col-md-6">
+                    <div class="education-content">
+                        <h2 class="education-title">ĐÀO TẠO - TUYỂN SINH</h2>
+                        <p class="education-description">
+                            Với bề dày lịch sử hơn 28 năm, khóa chuyên Design & Interaction Media (DIM) tại 
+                            Arena Multimedia đã đào tạo hàng ngàn chuyên gia thiết kế đồ họa và tương tác. 
+                            Chương trình học bao gồm Graphic Design, UI/UX Design, Motion Graphics, và nhiều 
+                            kỹ năng thiết kế hiện đại khác.
+                        </p>
+                        <p class="education-description">
+                            Học viên sẽ được học từ cơ bản đến nâng cao với đội ngũ giảng viên giàu kinh 
+                            nghiệm (IAMP) và được cấp chứng chỉ quốc tế sau khi hoàn thành. Đây là lộ trình 
+                            hoàn hảo cho những ai muốn theo đuổi sự nghiệp trong lĩnh vực thiết kế đa phương tiện.
+                        </p>
+                        <ul class="education-list">
+                            <li><i class="fa-regular fa-check-circle"></i> Graphic Design chuyên nghiệp</li>
+                            <li><i class="fa-regular fa-check-circle"></i> UI/UX Design thực tế</li>
+                            <li><i class="fa-regular fa-check-circle"></i> Motion Graphics & Video Editing</li>
+                            <li><i class="fa-regular fa-check-circle"></i> 3D Design & Animation</li>
+                        </ul>
+                        <a href="truong-trinh-dao-tao.html" class="btn btn-learn-more">Xem thêm</a>
+                    </div>
+                </div>
+                
+                <!-- Right side - Image -->
+                <div class="col-md-6">
+                    <div class="education-image">
+                        <img src="images/Dao_tao_tuyen_sinh.webp" alt="Sinh viên Arena Multimedia học UI/UX Design" class="img-fluid" loading="lazy">
+                    </div>
+                </div>
+                
             </div>
         </div>
     </section>
 
-    <!-- Contact Form -->
-    <section class="contact-section" id="contact">
-        <div class="contact-container">
-            <h2>Nhận Tư Vấn Ngay!</h2>
-            <form>
-                <div class="form-group">
-                    <label for="name">Họ và tên</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone">Số điện thoại</label>
-                    <input type="tel" id="phone" name="phone" required>
-                </div>
-                <div class="form-group">
-                    <label for="city">Khu vực/ Thành phố</label>
-                    <select id="city" name="city" required>
-                        <option value="">Chọn khu vực</option>
-                        <option value="hanoi">Hà Nội</option>
-                        <option value="hcm">TP. Hồ Chí Minh</option>
-                        <option value="danang">Đà Nẵng</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="message">Lời nhắn</label>
-                    <textarea id="message" name="message"></textarea>
-                </div>
-                <button type="submit" class="btn" style="width: 100%;">Submit</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- News Section -->
+    <!-- ========== NEWS & EVENTS SECTION ========== -->
     <section class="news-section">
-        <h2>Tin Tức - Sự Kiện</h2>
-        <div class="news-grid">
-            <div class="news-card">
-                <img src="images/tin tuc 1.jpg" alt="News 1">
-                <div class="news-card-content">
-                    <h3>Khóa học mới: Thiết kế Nhà Thiết Kế</h3>
-                    <p>Khám phá khóa học thiết kế chuyên nghiệp với Arena Multimedia.</p>
-                    <a href="#" class="btn">Xem thêm</a>
+        <div class="container">
+            
+            <!-- Section Title -->
+            <h2 class="section-title">Tin Tức - Sự Kiện</h2>
+            <p class="section-subtitle">
+                Cập nhật những thông tin mới nhất về các khóa học, sự kiện, và thành tích của Arena Multimedia. 
+                Kết nối với chúng tôi trên các nền tảng Facebook để không bỏ lỡ những tin tức quan trọng.
+            </p>
+            
+            <!-- News Cards Row -->
+            <div class="row news-row">
+                
+                <!-- News Card 1 -->
+                <div class="col-md-4">
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="images/tin-tuc-1.jpg" alt="Sự kiện tìm hiểu về Thiết kế ở thời đại công nghệ số" class="img-fluid" loading="lazy">
+                        </div>
+                        <div class="news-content">
+                            <span class="news-source">Arena Multimedia Phú Lâm</span>
+                            <h3 class="news-title">Tìm hiểu về Thiết kế ở thời đại công nghệ số</h3>
+                            <p class="news-date"><i class="fa-regular fa-calendar"></i> 15 Tháng 10, 2024</p>
+                            <a href="#" class="btn-read-news">Xem thêm</a>
+                        </div>
+                    </div>
                 </div>
+                
+                <!-- News Card 2 -->
+                <div class="col-md-4">
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="images/tin-tuc-2.webp" alt="Content Creator và AI - anh hùng hay phản diện" class="img-fluid" loading="lazy">
+                        </div>
+                        <div class="news-content">
+                            <span class="news-source">Arena Multimedia Hồ Văn Huê</span>
+                            <h3 class="news-title">Content Creator: AI là anh hùng hay phản diện?</h3>
+                            <p class="news-date"><i class="fa-regular fa-calendar"></i> 10 Tháng 10, 2024</p>
+                            <a href="#" class="btn-read-news">Xem thêm</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- News Card 3 -->
+                <div class="col-md-4">
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="images/tin-tuc-3.jpg" alt="Chương trình đặc biệt - Ngành Mỹ thuật thời đại tiên tiến" class="img-fluid" loading="lazy">
+                        </div>
+                        <div class="news-content">
+                            <span class="news-source">Arena Multimedia Nguyễn Đình Chiểu</span>
+                            <h3 class="news-title">Chương trình đặc biệt - Ngành Mỹ thuật thời đại tiên tiến</h3>
+                            <p class="news-date"><i class="fa-regular fa-calendar"></i> 5 Tháng 10, 2024</p>
+                            <a href="#" class="btn-read-news">Xem thêm</a>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
-            <div class="news-card">
-                <img src="images/tin tuc 2.webp" alt="News 2">
-                <div class="news-card-content">
-                    <h3>Content Creator Professional</h3>
-                    <p>Trở thành Content Creator chuyên nghiệp với Arena.</p>
-                    <a href="#" class="btn">Xem thêm</a>
-                </div>
+            
+            <!-- View All Button -->
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-view-all">Xem tất cả tin tức</a>
             </div>
-            <div class="news-card">
-                <img src="images/tin tuc 3.jpg" alt="News 3">
-                <div class="news-card-content">
-                    <h3>Ngành Mỹ thuật số phương liên</h3>
-                    <p>Cơ hội nghề nghiệp rộng mở trong lĩnh vực Mỹ thuật số.</p>
-                    <a href="#" class="btn">Xem thêm</a>
+            
+        </div>
+    </section>
+
+    <!-- ========== CONTACT FORM SECTION ========== -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="row">
+                
+                <!-- Form Container -->
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    
+                    <!-- Section Title -->
+                    <h2 class="contact-title">NHẬN TƯ VẤN NGAY</h2>
+                    <p class="contact-subtitle">
+                        Để lại thông tin của bạn, chúng tôi sẽ liên hệ tư vấn chi tiết về chương trình học, 
+                        học phí và cơ hội nghề nghiệp.
+                    </p>
+                    
+                    <!-- Contact Form -->
+                    <form class="contact-form" action="#" method="POST">
+                        
+                        <!-- Name Field -->
+                        <div class="form-group">
+                            <label for="fullName">Họ và tên <span class="required">*</span></label>
+                            <input 
+                                type="text" 
+                                class="form-control" 
+                                id="fullName" 
+                                name="fullName" 
+                                placeholder="Nhập họ và tên"
+                                required>
+                        </div>
+                        
+                        <!-- Email Field -->
+                        <div class="form-group">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input 
+                                type="email" 
+                                class="form-control" 
+                                id="email" 
+                                name="email" 
+                                placeholder="example@gmail.com"
+                                required>
+                        </div>
+                        
+                        <!-- Phone Field -->
+                        <div class="form-group">
+                            <label for="phone">Số điện thoại <span class="required">*</span></label>
+                            <input 
+                                type="tel" 
+                                class="form-control" 
+                                id="phone" 
+                                name="phone" 
+                                placeholder="(+84) 703 1379"
+                                required>
+                        </div>
+                        
+                        <!-- Interest Field (Dropdown) -->
+                        <div class="form-group">
+                            <label for="interest">Khóa học quan tâm</label>
+                            <select class="form-control" id="interest" name="interest">
+                                <option value="">Chọn khóa học</option>
+                                <option value="graphic-design">Graphic Design</option>
+                                <option value="uiux-design">UI/UX Design</option>
+                                <option value="motion-graphics">Motion Graphics</option>
+                                <option value="3d-animation">3D Animation</option>
+                                <option value="video-editing">Video Editing</option>
+                                <option value="digital-marketing">Digital Marketing</option>
+                            </select>
+                        </div>
+                        
+                        <!-- Message Field (Textarea) -->
+                        <div class="form-group">
+                            <label for="message">Nội dung tin nhắn</label>
+                            <textarea 
+                                class="form-control" 
+                                id="message" 
+                                name="message" 
+                                rows="4" 
+                                placeholder="Nhập nội dung bạn muốn tư vấn..."></textarea>
+                        </div>
+                        
+                        <!-- Submit Button -->
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-submit">
+                                <i class="fa-solid fa-paper-plane"></i> Gửi đi
+                            </button>
+                        </div>
+                        
+                    </form>
+                    
                 </div>
+                
             </div>
         </div>
     </section>
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-grid">
-                <div class="footer-section">
-                    <h3>TP.HCM</h3>
-                    <p>Arena Mỹ Đình</p>
-                    <p>Số 174 C Nguyễn Đình Chiễu, Phường Xuân Khanh</p>
-                    <p>Tel: 1900-1525</p>
-                    <p>Email: arena@arena.com</p>
+
+    <!-- ========== FOOTER SECTION ========== -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                
+                <!-- Left Column: Title & Locations -->
+                <div class="col-lg-8">
+                    <h3 class="footer-main-title">HỆ THỐNG ĐÀO TẠO MỸ THUẬT ĐA PHƯƠNG TIỆN<br>ARENA MULTIMEDIA</h3>
+                    
+                    <div class="row">
+                        <!-- TP. HỒ CHÍ MINH Section -->
+                        <div class="col-md-6">
+                            <h4 class="footer-city-title">TP. HỒ CHÍ MINH</h4>
+                            
+                            <!-- Location 1 -->
+                            <div class="footer-location">
+                                <h5>Arena Nguyễn Đình Chiểu</h5>
+                                <p>212-214 Nguyễn Đình Chiểu, P. Xuân Hoà</p>
+                                <p>1800 1525</p>
+                                <p>arena@apnatrain.com</p>
+                            </div>
+                            
+                            <!-- Location 2 -->
+                            <div class="footer-location">
+                                <h5>Arena Hồ Văn Huê</h5>
+                                <p>43R/12 Hồ Văn Huê, P. Đức Nhuận</p>
+                                <p>1800 6325</p>
+                                <p>arena@apnatrain.com</p>
+                            </div>
+                            
+                            <!-- Location 3 -->
+                            <div class="footer-location">
+                                <h5>Arena Tân Bình</h5>
+                                <p>Số 6 Tân Kỳ Tân Quý (gần Etown), P. Tân Bình</p>
+                                <p>18002074</p>
+                                <p>arena@apnatrain.com</p>
+                            </div>
+                            
+                            <!-- Location 4 -->
+                            <div class="footer-location">
+                                <h5>Arena Phú Lâm</h5>
+                                <p>136 Lê Tuấn Mậu (CV Phú Lâm), P. Phú Lâm</p>
+                                <p>1800 2046</p>
+                                <p>arena@apnatrain.com</p>
+                            </div>
+                        </div>
+                        
+                        <!-- TP. HÀ NỘI Section -->
+                        <div class="col-md-6">
+                            <h4 class="footer-city-title">TP. HÀ NỘI</h4>
+                            
+                            <!-- Location 1 -->
+                            <div class="footer-location">
+                                <h5>Arena Đống Đa</h5>
+                                <p>39-41 Võ Ngọc Phan, P. Láng</p>
+                                <p>1800 1542</p>
+                                <p>arena2@apnatrain.com</p>
+                            </div>
+                            
+                            <!-- Location 2 -->
+                            <div class="footer-location">
+                                <h5>Arena Cầu Giấy</h5>
+                                <p>D29 Phạm Văn Bạch, P. Cầu Giấy</p>
+                                <p>1800 1542</p>
+                                <p>arena2@apnatrain.com</p>
+                            </div>
+                            
+                            <!-- Location 3 -->
+                            <div class="footer-location">
+                                <h5>Arena Hà Đông</h5>
+                                <p>110 Trần Phú, P. Hà Đông</p>
+                                <p>1800 1542</p>
+                                <p>arena2@apnatrain.com</p>
+                            </div>
+                            
+                            <!-- Location 4 -->
+                            <div class="footer-location">
+                                <h5>Arena Long Biên</h5>
+                                <p>564 Nguyễn Văn Cừ, P. Bồ Đề</p>
+                                <p>1800 1542</p>
+                                <p>arena2@apnatrain.com</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="footer-section">
-                    <h3>Arena Cầu Giấy</h3>
-                    <p>Số 175 Cầu Giấy, Phường Đông Ngạc</p>
-                    <p>Tel: 1900-1525</p>
-                    <p>Email: arena@arena.com</p>
+                
+                <!-- Right Column: Newsletter Signup -->
+                <div class="col-lg-4">
+                    <div class="footer-newsletter">
+                        <h4 class="newsletter-title">NHẬN TIN SÁNG TẠO</h4>
+                        <p class="newsletter-subtitle">Cập nhật xu hướng thiết kế sáng tạo mỗi năm 2025</p>
+                        
+                        <form class="newsletter-form" action="#" method="POST">
+                            <div class="input-group">
+                                <input 
+                                    type="email" 
+                                    class="form-control newsletter-input" 
+                                    placeholder="Nhập mail của bạn"
+                                    required>
+                                <button type="submit" class="btn-newsletter-submit" aria-label="Subscribe to newsletter">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <div class="footer-section">
-                    <h3>HÀ NỘI</h3>
-                    <p>Arena Cầu Giấy</p>
-                    <p>Số 91 Tây Sơn Phủ, Phường Láng Hạ</p>
-                    <p>Tel: 1900-1525</p>
-                    <p>Email: arena@arena.com</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Arena Hồ Đồng</h3>
-                    <p>110 Trần Phú, Phường Hà Đông</p>
-                    <p>Tel: 1900-1525</p>
-                    <p>Email: arena@arena.com</p>
-                </div>
+                
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2020. ARENA MULTIMEDIA</p>
+        </div>
+        
+        <!-- Scrolling Text Animation -->
+        <div class="footer-scroll">
+            <div class="scroll-text">
+                MULTIMEDIA ARENA MULTIMEDIA ARENA MULTIMEDIA ARENA MULTIMEDIA ARENA MULTIMEDIA ARENA MULTIMEDIA ARENA MULTIMEDIA ARENA MULTIMEDIA ARENA MULTIMEDIA ARENA MULTIMEDIA ARENA
             </div>
         </div>
     </footer>
 
+    <!-- ========== JAVASCRIPT LIBRARIES ========== -->
+    <!-- jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    
+    <!-- Bootstrap JS Bundle (includes Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
     <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
+        // Khởi động carousel với cấu hình tùy chỉnh
+        $(document).ready(function(){
+            $('#heroCarousel').carousel({
+                interval: 7000,  // 7 giây tự động chuyển slide (tối ưu hơn 5s)
+                pause: 'hover',  // Dừng khi hover chuột
+                wrap: true       // Quay vòng lại từ đầu
             });
         });
-
-        // Form submission
-        document.querySelector('form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Cảm ơn bạn đã đăng ký! Chúng tôi sẽ liên hệ với bạn sớm.');
-            this.reset();
-        });
     </script>
+
+<!-- Copyright Section -->
+<div class="footer-copyright">
+    <div class="container">
+        <p>Copyright © 2025 Arena Multimedia. All Rights Reserved.</p>
+    </div>
+</div>
+
 </body>
 </html>
